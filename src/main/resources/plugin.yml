@@ -1,0 +1,20 @@
+name: DiscordChatBridge
+version: '1.0.0'
+main: org.blog.discordChatBridge.DiscordChatBridge
+api-version: '26.3'
+load: POSTWORLD
+libraries:
+  - net.dv8tion:JDA:${jdaVersion}
+
+commands:
+  link:
+    description: Proceed with the authentication to link your Minecraft account with your Discord account.
+    usage: /link <Your Discord user id>
+
+  verify:
+    description: Enter the verification code for authentication
+    usage: /verify <Your verification code>
+
+  unlink:
+    description: Disconnect your account.
+    usage: /unlink
